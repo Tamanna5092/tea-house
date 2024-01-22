@@ -7,6 +7,8 @@
     <!-- Tailwind and Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/af53811214.js" crossorigin="anonymous"></script>
 <!-- manrope google font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +20,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'text-light-gray': '#1C1C1C',
           }
         }
       }
@@ -25,19 +28,40 @@
   </script>
 <style>
     .manrope{
-        font-family: "Manrope",
+        font-family: "Manrope";
     }
 </style>
 </head>
 <body class="manrope">
-    <header>
-
+    <header class="container mx-auto">
+      <div class="hero ">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold text-[#1C1C1C]">It's good <br>
+              tea time at The <br>
+              Tea House</h1>
+            <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div class="">
+            <img src="images/banner.png" class="max-w-sm" />
+            <!-- rating badge -->
+            <div class="flex items-center gap-4 w-60 bg-white drop-shadow-lg rounded-xl -mt-12 p-5">
+              <i class="fa-solid fa-star text-4xl text-amber-400"></i>
+              <div class="">
+                <h4 class="text-[#1C1C1C] text-3xl font-extrabold">5.00</h4>
+                <p class="text-light-gray font-semibold">Trust Pilot Ratings</p>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-
+      
     </main>
     <footer>
-        
+      
     </footer>
 </body>
 </html>
